@@ -1,5 +1,5 @@
 {% set name = "sse-starlette" %}
-{% set version = "1.6.5" %}
+{% set version = "2.0.0" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sse-starlette-{{ version }}.tar.gz
-  sha256: 819f2c421fb37067380fe3dcaba246c476b02651b7bb7601099a378ad802a0ac
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 0c43cc43aca4884c88c8416b65777c4de874cc4773e6458d3579c0a353dc2fb7
 
 build:
   number: 0
@@ -20,6 +20,8 @@ requirements:
     - pip
     - python >=3.8
   run:
+    - anyio
+    - uvicorn
     - python >=3.8
     - starlette
 
