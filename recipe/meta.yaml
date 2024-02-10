@@ -17,14 +17,14 @@ build:
 
 requirements:
   host:
+    - python >=3.8
+    - pdm-backend
     - pip
-    - python >=3.8
   run:
-    - anyio
-    - uvicorn
     - python >=3.8
+    - anyio
     - starlette
-
+    - uvicorn
 test:
   imports:
     - sse_starlette
