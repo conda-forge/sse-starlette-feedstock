@@ -17,14 +17,13 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pdm-backend
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - anyio >=4.7.0
     - starlette >=0.41.3
-    - uvicorn
 test:
   imports:
     - sse_starlette
@@ -32,6 +31,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/sysid/sse-starlette
