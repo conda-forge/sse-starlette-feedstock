@@ -1,5 +1,5 @@
 {% set name = "sse-starlette" %}
-{% set version = "3.3.2" %}
+{% set version = "3.3.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 678fca55a1945c734d8472a6cad186a55ab02840b4f6786f5ee8770970579dcd
+  sha256: 72a95d7575fd5129bd0ae15275ac6432bb35ac542fdebb82889c24bb9f3f4049
 
 build:
   number: 0
