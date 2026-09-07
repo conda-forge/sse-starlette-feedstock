@@ -1,5 +1,5 @@
 {% set name = "sse-starlette" %}
-{% set version = "3.4.10" %}
+{% set version = "3.4.11" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: c6c87280d8feb4e55a8d79633782766b9cac6a26da5c79a145d00aa404117a86
+  sha256: 1bae716c02f3e6f294be41ff333220692dae7c3cbab077c900f159676719dade
 
 build:
   number: 0
